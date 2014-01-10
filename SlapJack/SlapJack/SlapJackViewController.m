@@ -12,6 +12,7 @@
 @interface SlapJackViewController ()
 
 @property Deck * playingCardDeck;
+@property int flipCount;
 
 @end
 
@@ -37,4 +38,15 @@
     return _playingCardDeck;
 }
 
+- (IBAction)flipCard:(UIButton *)sender {
+    [sender setTitle:@"A" forState:UIControlStateNormal];
+    [self increaseFlipCount];
+}
+
+- (void) increaseFlipCount {
+    _flipCount ++;
+    [self.flipLabel1 setText:[NSString stringWithFormat:@"Flip : %d", _flipCount]];
+
+
+}
 @end

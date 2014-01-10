@@ -11,7 +11,6 @@
 
 @interface SlapJackViewController : UIViewController
 - (Deck *) getPlayingCardDeck;
-
-@property (weak, nonatomic) IBOutlet UILabel *flipLabel;
+@property (weak, nonatomic) IBOutlet UILabel *flipLabel1;
 
 @end
