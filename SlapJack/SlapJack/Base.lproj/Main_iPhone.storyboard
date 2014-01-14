@@ -17,12 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sjy-X3-ZQh">
-                                <rect key="frame" x="20" y="63" width="280" height="183"/>
+                            <button opaque="NO" contentMode="top" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sjy-X3-ZQh">
+                                <rect key="frame" x="20" y="50" width="280" height="197"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="96"/>
-                                <state key="normal" title="A ♣︎">
+                                <state key="normal" title="A ♣︎" backgroundImage="zebra-280.jpg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -38,10 +38,6 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Sjy-X3-ZQh" secondAttribute="trailing" constant="20" id="Ci9-LH-QuH"/>
-                            <constraint firstItem="Sjy-X3-ZQh" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="Mv0-wI-Fjv"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="flipLabel1" destination="9uF-Zq-JyH" id="oBX-iz-jCf"/>
@@ -49,9 +45,29 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-100" y="6"/>
+            <point key="canvasLocation" x="-139" y="-11"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zC1-xf-Knw">
+            <objects>
+                <viewController id="JRn-Pe-jTR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ul1-8l-omr"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ua8-Zc-hIU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Neo-h5-mEH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t9q-Vj-aI9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="zebra-280.jpg" width="280" height="210"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

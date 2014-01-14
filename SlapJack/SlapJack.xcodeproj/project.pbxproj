@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D8ACFBED1884E638009DE449 /* zebra.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D8ACFBEC1884E638009DE449 /* zebra.jpg */; };
+		D8ACFBEF1884E84D009DE449 /* zebra-280.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D8ACFBEE1884E84D009DE449 /* zebra-280.jpg */; };
+		D8ACFBF21884EB13009DE449 /* ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D8ACFBF11884EB13009DE449 /* ding.mp3 */; };
+		D8ACFBF41884EC45009DE449 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8ACFBF31884EC45009DE449 /* CoreAudio.framework */; };
+		D8ACFBF61884EC52009DE449 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8ACFBF51884EC52009DE449 /* AudioToolbox.framework */; };
 		D8E4986F187DB864005A32D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E4986E187DB864005A32D6 /* Foundation.framework */; };
 		D8E49871187DB864005A32D6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E49870187DB864005A32D6 /* CoreGraphics.framework */; };
 		D8E49873187DB864005A32D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E49872187DB864005A32D6 /* UIKit.framework */; };
@@ -24,8 +29,6 @@
 		D8E4989D187DB864005A32D6 /* SlapJackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E4989C187DB864005A32D6 /* SlapJackTests.m */; };
 		D8E498D8187DBE37005A32D6 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E498CD187DBE37005A32D6 /* Card.m */; };
 		D8E498D9187DBE37005A32D6 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E498CF187DBE37005A32D6 /* Deck.m */; };
-		D8E498DA187DBE37005A32D6 /* GetTo24AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E498D1187DBE37005A32D6 /* GetTo24AppDelegate.m */; };
-		D8E498DB187DBE37005A32D6 /* GetTo24ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E498D3187DBE37005A32D6 /* GetTo24ViewController.m */; };
 		D8E498DC187DBE37005A32D6 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E498D5187DBE37005A32D6 /* PlayingCard.m */; };
 		D8E498DD187DBE37005A32D6 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E498D7187DBE37005A32D6 /* PlayingCardDeck.m */; };
 /* End PBXBuildFile section */
@@ -41,6 +44,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D8ACFBEC1884E638009DE449 /* zebra.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zebra.jpg; sourceTree = "<group>"; };
+		D8ACFBEE1884E84D009DE449 /* zebra-280.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "zebra-280.jpg"; sourceTree = "<group>"; };
+		D8ACFBF11884EB13009DE449 /* ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ding.mp3; sourceTree = "<group>"; };
+		D8ACFBF31884EC45009DE449 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		D8ACFBF51884EC52009DE449 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		D8E4986B187DB864005A32D6 /* SlapJack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlapJack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E4986E187DB864005A32D6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D8E49870187DB864005A32D6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -65,10 +73,6 @@
 		D8E498CD187DBE37005A32D6 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = "../../ios-getto24/Get To 24/Get To 24/Card.m"; sourceTree = "<group>"; };
 		D8E498CE187DBE37005A32D6 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Deck.h; path = "../../ios-getto24/Get To 24/Get To 24/Deck.h"; sourceTree = "<group>"; };
 		D8E498CF187DBE37005A32D6 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Deck.m; path = "../../ios-getto24/Get To 24/Get To 24/Deck.m"; sourceTree = "<group>"; };
-		D8E498D0187DBE37005A32D6 /* GetTo24AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GetTo24AppDelegate.h; path = "../../ios-getto24/Get To 24/Get To 24/GetTo24AppDelegate.h"; sourceTree = "<group>"; };
-		D8E498D1187DBE37005A32D6 /* GetTo24AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GetTo24AppDelegate.m; path = "../../ios-getto24/Get To 24/Get To 24/GetTo24AppDelegate.m"; sourceTree = "<group>"; };
-		D8E498D2187DBE37005A32D6 /* GetTo24ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GetTo24ViewController.h; path = "../../ios-getto24/Get To 24/Get To 24/GetTo24ViewController.h"; sourceTree = "<group>"; };
-		D8E498D3187DBE37005A32D6 /* GetTo24ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GetTo24ViewController.m; path = "../../ios-getto24/Get To 24/Get To 24/GetTo24ViewController.m"; sourceTree = "<group>"; };
 		D8E498D4187DBE37005A32D6 /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingCard.h; path = "../../ios-getto24/Get To 24/Get To 24/PlayingCard.h"; sourceTree = "<group>"; };
 		D8E498D5187DBE37005A32D6 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCard.m; path = "../../ios-getto24/Get To 24/Get To 24/PlayingCard.m"; sourceTree = "<group>"; };
 		D8E498D6187DBE37005A32D6 /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingCardDeck.h; path = "../../ios-getto24/Get To 24/Get To 24/PlayingCardDeck.h"; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8ACFBF61884EC52009DE449 /* AudioToolbox.framework in Frameworks */,
+				D8ACFBF41884EC45009DE449 /* CoreAudio.framework in Frameworks */,
 				D8E49871187DB864005A32D6 /* CoreGraphics.framework in Frameworks */,
 				D8E49873187DB864005A32D6 /* UIKit.framework in Frameworks */,
 				D8E4986F187DB864005A32D6 /* Foundation.framework in Frameworks */,
@@ -99,9 +105,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D8ACFBEB1884E630009DE449 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				D8ACFBEE1884E84D009DE449 /* zebra-280.jpg */,
+				D8ACFBEC1884E638009DE449 /* zebra.jpg */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		D8ACFBF01884EB08009DE449 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				D8ACFBF11884EB13009DE449 /* ding.mp3 */,
+			);
+			name = sounds;
+			sourceTree = "<group>";
+		};
 		D8E49862187DB864005A32D6 = {
 			isa = PBXGroup;
 			children = (
+				D8ACFBF01884EB08009DE449 /* sounds */,
+				D8ACFBEB1884E630009DE449 /* images */,
 				D8E498A6187DB9C6005A32D6 /* model */,
 				D8E49874187DB864005A32D6 /* SlapJack */,
 				D8E49896187DB864005A32D6 /* SlapJackTests */,
@@ -122,6 +147,8 @@
 		D8E4986D187DB864005A32D6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D8ACFBF51884EC52009DE449 /* AudioToolbox.framework */,
+				D8ACFBF31884EC45009DE449 /* CoreAudio.framework */,
 				D8E4986E187DB864005A32D6 /* Foundation.framework */,
 				D8E49870187DB864005A32D6 /* CoreGraphics.framework */,
 				D8E49872187DB864005A32D6 /* UIKit.framework */,
@@ -181,10 +208,6 @@
 				D8E498CD187DBE37005A32D6 /* Card.m */,
 				D8E498CE187DBE37005A32D6 /* Deck.h */,
 				D8E498CF187DBE37005A32D6 /* Deck.m */,
-				D8E498D0187DBE37005A32D6 /* GetTo24AppDelegate.h */,
-				D8E498D1187DBE37005A32D6 /* GetTo24AppDelegate.m */,
-				D8E498D2187DBE37005A32D6 /* GetTo24ViewController.h */,
-				D8E498D3187DBE37005A32D6 /* GetTo24ViewController.m */,
 				D8E498D4187DBE37005A32D6 /* PlayingCard.h */,
 				D8E498D5187DBE37005A32D6 /* PlayingCard.m */,
 				D8E498D6187DBE37005A32D6 /* PlayingCardDeck.h */,
@@ -272,8 +295,11 @@
 			files = (
 				D8E49885187DB864005A32D6 /* Main_iPad.storyboard in Resources */,
 				D8E4988A187DB864005A32D6 /* Images.xcassets in Resources */,
+				D8ACFBF21884EB13009DE449 /* ding.mp3 in Resources */,
 				D8E49882187DB864005A32D6 /* Main_iPhone.storyboard in Resources */,
+				D8ACFBED1884E638009DE449 /* zebra.jpg in Resources */,
 				D8E49879187DB864005A32D6 /* InfoPlist.strings in Resources */,
+				D8ACFBEF1884E84D009DE449 /* zebra-280.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,10 +318,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8E498DA187DBE37005A32D6 /* GetTo24AppDelegate.m in Sources */,
 				D8E498DD187DBE37005A32D6 /* PlayingCardDeck.m in Sources */,
 				D8E498D9187DBE37005A32D6 /* Deck.m in Sources */,
-				D8E498DB187DBE37005A32D6 /* GetTo24ViewController.m in Sources */,
 				D8E49888187DB864005A32D6 /* SlapJackViewController.m in Sources */,
 				D8E4987B187DB864005A32D6 /* main.m in Sources */,
 				D8E4987F187DB864005A32D6 /* SlapJackAppDelegate.m in Sources */,
@@ -437,6 +461,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SlapJack/SlapJack-Prefix.pch";
 				INFOPLIST_FILE = "SlapJack/SlapJack-Info.plist";
@@ -451,6 +476,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SlapJack/SlapJack-Prefix.pch";
 				INFOPLIST_FILE = "SlapJack/SlapJack-Info.plist";
@@ -521,6 +547,7 @@
 				D8E498A2187DB864005A32D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8E498A3187DB864005A32D6 /* Build configuration list for PBXNativeTarget "SlapJackTests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +556,7 @@
 				D8E498A5187DB864005A32D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
