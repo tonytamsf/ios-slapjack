@@ -56,13 +56,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SlapJack/SlapJackViewController.h"
-            timestampString = "411373303.950148"
+            timestampString = "411541522.26508"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "@interface SlapJackViewController"
-            landmarkType = "2">
+            startingLineNumber = "42"
+            endingLineNumber = "42">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -72,12 +70,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SlapJack/SlapJackViewController.m"
-            timestampString = "411364783.574696"
+            timestampString = "411540274.933322"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "-flipCard:"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "-flipCard:forPlayer:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -88,12 +86,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SlapJack/SlapJackViewController.m"
-            timestampString = "411364783.574696"
+            timestampString = "411540274.933322"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
-            landmarkName = "-increaseFlipCount"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "-increaseFlipCount:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -120,13 +118,59 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../ios-getto24/Get To 24/Get To 24/PlayingCard.m"
-            timestampString = "411351614.829581"
+            timestampString = "411541626.545392"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "11"
-            endingLineNumber = "11"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
             landmarkName = "@implementation PlayingCard"
             landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SlapJack/SlapJackViewController.h"
+            timestampString = "411541074.144163"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "@interface SlapJackViewController"
+            landmarkType = "2">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[SlapJackViewController player2LookForLabel]"
+                  moduleName = "SlapJack"
+                  urlString = "file:///Users/tonytam/Dropbox/Developer/git/ios-slapjack/SlapJack/SlapJack/SlapJackViewController.h"
+                  timestampString = "411533517.380062"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[SlapJackViewController setPlayer2LookForLabel:]"
+                  moduleName = "SlapJack"
+                  urlString = "file:///Users/tonytam/Dropbox/Developer/git/ios-slapjack/SlapJack/SlapJack/SlapJackViewController.h"
+                  timestampString = "411533517.380419"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
