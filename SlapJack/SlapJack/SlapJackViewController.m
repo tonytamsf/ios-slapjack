@@ -59,10 +59,15 @@
 - (IBAction)flipCard:(UILabel *)sender forPlayer:(int) player{
     
     Card *card = [[self getPlayingCardDeck:player] drawRandomCard];
+    NSString *cardFace = @"Done";
+    
+    if (card != nil) {
+        cardFace = [card contents];
+        [self increaseFlipCount:player];
+    }
+    
     DLog(@"card = %@", card);
-    //[sender setTitle:[card contents] forState:UIControlStateNormal];
-    sender.text = [card contents];
-    [self increaseFlipCount:player];
+    sender.text = cardFace;
     //[self playSoundWithOfThisFile:@"ding.mp3"];
 }
 

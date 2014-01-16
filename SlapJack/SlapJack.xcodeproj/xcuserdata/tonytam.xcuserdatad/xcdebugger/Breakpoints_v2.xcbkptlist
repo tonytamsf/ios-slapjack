@@ -70,27 +70,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SlapJack/SlapJackViewController.m"
-            timestampString = "411540274.933322"
+            timestampString = "411547410.153806"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
-            landmarkName = "-flipCard:forPlayer:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SlapJack/SlapJackViewController.m"
-            timestampString = "411540274.933322"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
             landmarkName = "-increaseFlipCount:"
             landmarkType = "5">
          </BreakpointContent>
