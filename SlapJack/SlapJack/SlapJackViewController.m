@@ -63,7 +63,7 @@
     //[sender setTitle:[card contents] forState:UIControlStateNormal];
     sender.text = [card contents];
     [self increaseFlipCount:player];
-    [self playSoundWithOfThisFile:@"ding.mp3"];
+    //[self playSoundWithOfThisFile:@"ding.mp3"];
 }
 
 - (void) increaseFlipCount:(int) player {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <deployment defaultVersion="1536" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
@@ -14,50 +14,56 @@
                         <viewControllerLayoutGuide type="bottom" id="VZT-Jm-NYr"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <userGuides>
+                            <userLayoutGuide location="160" affinity="minX"/>
+                        </userGuides>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cards Remaining: 52" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9uF-Zq-JyH">
-                                <rect key="frame" x="20" y="20" width="280" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zebra-280.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="lOs-JN-CEK" userLabel="Image View1 - zebra-280.jpg">
+                                <rect key="frame" x="20" y="4" width="280" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cards Remaining: 52" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9uF-Zq-JyH">
+                                <rect key="frame" x="20" y="10" width="280" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="zebra-280.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="lOs-JN-CEK">
-                                <rect key="frame" x="20" y="49" width="280" height="197"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AAA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EYQ-eq-gQ5">
-                                <rect key="frame" x="45" y="90" width="231" height="115"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AAA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EYQ-eq-gQ5">
+                                <rect key="frame" x="45" y="51" width="231" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="96"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="zebra-280.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="CW2-VJ-w8U">
-                                <rect key="frame" x="20" y="326" width="280" height="197"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zebra-280.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="CW2-VJ-w8U" userLabel="Image View2 - zebra-280.jpg">
+                                <rect key="frame" x="20" y="346" width="280" height="197"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="197" id="2Mk-gh-1YS"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AAA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mC6-d8-aHR">
-                                <rect key="frame" x="68" y="367" width="185" height="115"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AAA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mC6-d8-aHR">
+                                <rect key="frame" x="68" y="387" width="185" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="96"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Look for: AAA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meY-oo-eHZ">
-                                <rect key="frame" x="91" y="254" width="139" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Look for: AAA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meY-oo-eHZ">
+                                <rect key="frame" x="91" y="213" width="139" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Look for : AAA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ebt-BO-h8n">
-                                <rect key="frame" x="88" y="297" width="144" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Look for : AAA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ebt-BO-h8n">
+                                <rect key="frame" x="91" y="323" width="144" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cards Remaining: 52" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w8a-Qu-C8U">
-                                <rect key="frame" x="20" y="527" width="280" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cards Remaining: 52" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w8a-Qu-C8U">
+                                <rect key="frame" x="20" y="525" width="280" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -65,6 +71,29 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CW2-VJ-w8U" firstAttribute="leading" secondItem="w8a-Qu-C8U" secondAttribute="leading" id="3ai-Cc-htC"/>
+                            <constraint firstAttribute="bottom" secondItem="CW2-VJ-w8U" secondAttribute="bottom" constant="5" id="8i6-Mp-BEY"/>
+                            <constraint firstItem="EYQ-eq-gQ5" firstAttribute="centerY" secondItem="lOs-JN-CEK" secondAttribute="centerY" id="Gif-Cs-czR"/>
+                            <constraint firstItem="CW2-VJ-w8U" firstAttribute="centerX" secondItem="meY-oo-eHZ" secondAttribute="centerX" id="M37-He-rjj"/>
+                            <constraint firstItem="CW2-VJ-w8U" firstAttribute="centerX" secondItem="EYQ-eq-gQ5" secondAttribute="centerX" id="MZp-Nz-l35"/>
+                            <constraint firstItem="EYQ-eq-gQ5" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="51" id="SDm-hn-rAM"/>
+                            <constraint firstItem="VZT-Jm-NYr" firstAttribute="top" secondItem="w8a-Qu-C8U" secondAttribute="bottom" constant="2" id="VPT-Jr-ptF"/>
+                            <constraint firstItem="CW2-VJ-w8U" firstAttribute="centerY" secondItem="mC6-d8-aHR" secondAttribute="centerY" id="VS4-Kc-7AH"/>
+                            <constraint firstItem="CW2-VJ-w8U" firstAttribute="leading" secondItem="lOs-JN-CEK" secondAttribute="leading" id="XUk-nz-zbZ"/>
+                            <constraint firstItem="meY-oo-eHZ" firstAttribute="top" secondItem="EYQ-eq-gQ5" secondAttribute="bottom" constant="47" id="dNj-eD-atc"/>
+                            <constraint firstItem="CW2-VJ-w8U" firstAttribute="trailing" secondItem="9uF-Zq-JyH" secondAttribute="trailing" id="hIO-jF-AkZ"/>
+                            <constraint firstItem="CW2-VJ-w8U" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="j5l-ff-ExY"/>
+                            <constraint firstItem="CW2-VJ-w8U" firstAttribute="centerX" secondItem="mC6-d8-aHR" secondAttribute="centerX" id="lON-y3-ZqW"/>
+                            <constraint firstItem="Ebt-BO-h8n" firstAttribute="leading" secondItem="meY-oo-eHZ" secondAttribute="leading" id="mtX-lL-Ojb"/>
+                            <constraint firstItem="Ebt-BO-h8n" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="91" id="otV-SU-yfl"/>
+                            <constraint firstItem="EYQ-eq-gQ5" firstAttribute="top" secondItem="9uF-Zq-JyH" secondAttribute="bottom" constant="20" id="uBH-hY-dCG"/>
+                            <constraint firstItem="CW2-VJ-w8U" firstAttribute="leading" secondItem="9uF-Zq-JyH" secondAttribute="leading" id="uJx-aY-Vck"/>
+                            <constraint firstItem="CW2-VJ-w8U" firstAttribute="top" secondItem="Ebt-BO-h8n" secondAttribute="bottom" constant="2" id="wbS-iH-rRP"/>
+                            <constraint firstAttribute="trailing" secondItem="Ebt-BO-h8n" secondAttribute="trailing" constant="85" id="xGV-Vp-MGq"/>
+                            <constraint firstItem="EYQ-eq-gQ5" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="45" id="xZG-T1-nln"/>
+                            <constraint firstItem="CW2-VJ-w8U" firstAttribute="trailing" secondItem="w8a-Qu-C8U" secondAttribute="trailing" id="zmr-22-Jhi"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="flipLabel1" destination="9uF-Zq-JyH" id="oBX-iz-jCf"/>
@@ -80,7 +109,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="125" y="39"/>
+            <point key="canvasLocation" x="37" y="58"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="zC1-xf-Knw">
@@ -91,7 +120,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Ua8-Zc-hIU"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Neo-h5-mEH">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
