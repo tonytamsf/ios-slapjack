@@ -15,6 +15,8 @@
 {
     self = [super init];
     if (self) {
+        
+        // build a deck of cards
         for (NSString *suit in [PlayingCard validSuits]) {
             for (NSUInteger rank = 1; rank <= [PlayingCard maxRank]; rank++) {
                 PlayingCard *card = [[PlayingCard alloc] init];

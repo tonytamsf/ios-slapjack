@@ -30,6 +30,7 @@
     self.player1Image.layer.transform =CATransform3DMakeRotation(M_PI, 0.0f, 0.0f, 1.0f);
     self.player1LookForLabel.layer.transform =CATransform3DMakeRotation(M_PI, 0.0f, 0.0f, 1.0f);
     self.player1CountLabel.layer.transform =CATransform3DMakeRotation(M_PI, 0.0f, 0.0f, 1.0f);
+    [self.view setMultipleTouchEnabled:YES];
 
 }
 
@@ -56,6 +57,27 @@
     }
 }
 
+- (void) declareWinner {
+    int winner = 1;
+    if (_flipCount2 > _flipCount2) {
+        winner = 2;
+    }
+    
+    [self startGame];
+}
+
+- (void) startGame  {
+    _flipCount1 = 0;
+    _flipCount2 = 0;
+    _playingCardDeck1 = _playingCardDeck2 = nil;
+    [self.flipLabel1 setText:[NSString stringWithFormat:@"Cards Remaining: %d", 52 - _flipCount1]];
+    [self.flipLabel2 setText:[NSString stringWithFormat:@"Cards Remaining: %d", 52 - _flipCount2]];
+    NSString *cardFace = @"Done";
+    self.player1Label.text = cardFace;
+    self.player2Label.text = cardFace;
+}
+
+
 - (IBAction)flipCard:(UILabel *)sender forPlayer:(int) player{
     
     Card *card = [[self getPlayingCardDeck:player] drawRandomCard];
@@ -64,6 +86,8 @@
     if (card != nil) {
         cardFace = [card contents];
         [self increaseFlipCount:player];
+    } else {
+        [self declareWinner];
     }
     
     DLog(@"card = %@", card);
@@ -102,9 +126,21 @@
         [self flipCard:self.player1Label forPlayer:1];
         DLog(@"touched %@", touch.view);
     }
+    [super touchesBegan:touches withEvent:event];
+}
+
+-(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+    [super touchesEnded:touches withEvent:event];
+}
+
+-(void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
+    [super touchesCancelled:touches withEvent:event];
 }
 
 
+-(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+    [super touchesMoved:touches withEvent:event];
+}
 
 - (void)playSoundWithOfThisFile:(NSString*)fileNameWithExtension {
     
