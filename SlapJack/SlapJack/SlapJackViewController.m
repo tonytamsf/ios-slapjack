@@ -17,6 +17,7 @@
 @property int flipCount1;
 @property int flipCount2;
 
+@property BOOL _gameEnded;
 @end
 
 @implementation SlapJackViewController
@@ -31,6 +32,7 @@
     self.player1LookForLabel.layer.transform =CATransform3DMakeRotation(M_PI, 0.0f, 0.0f, 1.0f);
     self.player1CountLabel.layer.transform =CATransform3DMakeRotation(M_PI, 0.0f, 0.0f, 1.0f);
     [self.view setMultipleTouchEnabled:YES];
+    [self startGame];
 
 }
 
@@ -42,6 +44,9 @@
 
 - (Deck *) getPlayingCardDeck:(int) player
 {
+    if (self._gameEnded) {
+        return nil;
+    }
     if (player == 1 ) {
         if (! _playingCardDeck1) {
             _playingCardDeck1 = [[PlayingCardDeck alloc] init];
@@ -59,11 +64,20 @@
 
 - (void) declareWinner {
     int winner = 1;
+    self._gameEnded = true;
+    
     if (_flipCount2 > _flipCount2) {
         winner = 2;
     }
     
-    [self startGame];
+    if (winner == 1) {
+        self.player1Label.text = @"Win!";
+        self.player2Label.text = @"Lose!";
+
+    } else {
+        self.player2Label.text = @"Win!";
+        self.player1Label.text = @"Lose!";
+    }
 }
 
 - (void) startGame  {
@@ -72,7 +86,7 @@
     _playingCardDeck1 = _playingCardDeck2 = nil;
     [self.flipLabel1 setText:[NSString stringWithFormat:@"Cards Remaining: %d", 52 - _flipCount1]];
     [self.flipLabel2 setText:[NSString stringWithFormat:@"Cards Remaining: %d", 52 - _flipCount2]];
-    NSString *cardFace = @"Done";
+    NSString *cardFace = @"Ready";
     self.player1Label.text = cardFace;
     self.player2Label.text = cardFace;
 }
@@ -86,12 +100,13 @@
     if (card != nil) {
         cardFace = [card contents];
         [self increaseFlipCount:player];
+        DLog(@"card = %@", card);
+        sender.text = cardFace;
     } else {
         [self declareWinner];
     }
     
-    DLog(@"card = %@", card);
-    sender.text = cardFace;
+
     //[self playSoundWithOfThisFile:@"ding.mp3"];
 }
 
@@ -143,7 +158,7 @@
 }
 
 - (void)playSoundWithOfThisFile:(NSString*)fileNameWithExtension {
-    
+ 
     // Eg - abc.mp3
     AVAudioPlayer *audioPlayerObj;
     
@@ -162,8 +177,8 @@
     
     AVAudioPlayer * aup = [audioPlayerObj initWithContentsOfURL:acutualFilePath error:&error];
     DLog(@"error %@", error);
-    
-    [aup play];
-    
+    DLog(@"duration %f", aup.duration);
+    Boolean playSuccess = [aup play];
+    DLog(@"success %d", playSuccess);
 }
 @end
